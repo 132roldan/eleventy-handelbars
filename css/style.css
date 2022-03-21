@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+main{
+  align-self: center;
+}
+@font-face {
+  font-family: metropolis;
+  src: url("/css/Metropolis-Light.oft");
+}
+h2{
+  text-align: center;
+}
+
+.imgGrid{
+  max-width: 33%;
+  min-width: 145px;
+  max-height: 193px;
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+p{
+  padding: 16px;
+  font-size: 1.1rem;
+  
+}
+body {
+  background-color: #eeeeee;
+  font-family:  Roboto;
+  /* padding: 1rem;
+  padding-top: 1rem; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: -webkit-center;
+  
+}
+header{
+  align-items: center;
+  padding:15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+    background: linear-gradient(122deg, #f44336, #e91e63);
+    box-shadow: -1px 0px 3px 0px;
+    font-size: 25px;
+}
+footer{
+  align-items: center;
+  /* padding:15px;
+  margin-bottom: 15px; */
+  border-radius: 5px;
+    background: linear-gradient(122deg, #f44336, #e91e63);
+    box-shadow: -1px 0px 3px 0px;
+}
+
+a {
+  
+  color: inherit
+}
+a:hover{
+  background-color: #b91408;
+}
+
+.container{
+  
+  margin: 5%;
+  gap:10px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+ 
+}
+.containerHouse{
+  max-width: 800px;
+  display: flex;
+  font-size: 40px;
+}
+.containerThrift {
+  max-width: 1000px;
+  display: flex;
+  font-size: 40px;
+  align-items: center;
+}
+ .footer{
+  display: flex;
+    
+  
+  justify-content: space-evenly
+}
+
+ul{
+  display: flex;
+  /* gap: 5rem; */
+  justify-content: space-around;
+  list-style-type: none;
+}
+img {
+  box-shadow: 3px 2px 8px 0px;
+  width: 300px;
+}
+
+
+@media screen and (max-width: 726px){
+
+  .container {
+    /* max-width: 100%; */
+    padding: 5%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.containerHouse {
+  max-width: 800px;
+  display: flex;
+  font-size: 40px;
+  flex-direction: column;
+}
+.containerThrift {
+  max-width: 1000px;
+  display: flex;
+  font-size: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+li{
+  font-size: 20px;
+}
+}
